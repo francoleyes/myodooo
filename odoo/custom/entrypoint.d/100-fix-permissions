@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+# Ensure sessions directory exists and fix permissions
+mkdir -p /var/lib/odoo/sessions
+chown -R odoo:odoo /var/lib/odoo/sessions

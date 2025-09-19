@@ -1,0 +1,79 @@
+# See https://github.com/Tecnativa/doodba#optodoocustomsrcreposyaml
+./odoo:
+  defaults:
+    # Shallow repositories ($DEPTH_DEFAULT=1) are faster & thinner
+    # You may need a bigger depth when merging PRs (use $DEPTH_MERGE
+    # for a sane value of 100 commits)
+    depth: $DEPTH_DEFAULT
+  remotes:
+    ocb: https://github.com/OCA/OCB.git
+    odoo: https://github.com/odoo/odoo.git
+    openupgrade: https://github.com/OCA/OpenUpgrade.git
+  target: odoo $ODOO_VERSION
+  merges:
+    - odoo $ODOO_VERSION
+    # Example of a merge of the PR with the number <PR>
+    # - oca refs/pull/<PR>/head
+
+oca-web:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/web.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-odoo-argentina-ce:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/ingadhoc/odoo-argentina-ce.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-odoo-argentina:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/ingadhoc/odoo-argentina.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-account-payment:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/ingadhoc/account-payment.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-argentina-sale:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/ingadhoc/argentina-sale.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-account-financial-tools:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-financial-tools.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-account-financial-reporting:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-financial-reporting.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION

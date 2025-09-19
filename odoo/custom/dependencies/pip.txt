@@ -1,0 +1,15 @@
+git+https://github.com/OCA/openupgradelib.git@master
+unicodecsv
+unidecode
+jingtrang
+
+urllib3==2.5.0
+httplib2==0.20.4; python_version > '3'
+pysimplesoap==1.8.22; python_version > '3'
+cryptography==41.0.1; python_version > '3'
+pyOpenSSL==23.2.0; python_version > '3'
+Pillow<=9.5.0; platform_machine!='x86_64'
+Pillow>=2.0.0; platform_machine=='x86_64'
+certifi>=2020.4.5.1
+future==0.18.3
+PyAfipWs @ git+https://github.com/ingadhoc/pyafipws.git@odoo18

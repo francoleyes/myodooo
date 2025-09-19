@@ -1,0 +1,13 @@
+oca-web: "*"
+
+ingadhoc-odoo-argentina-ce: "*"
+
+ingadhoc-odoo-argentina: "*"
+
+ingadhoc-account-payment: "*"
+
+ingadhoc-argentina-sale: "*"
+
+oca-account-financial-tools: "*"
+
+oca-account-financial-reporting: "*"
